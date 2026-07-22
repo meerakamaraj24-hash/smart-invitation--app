@@ -1,0 +1,407 @@
+/* ================= GOOGLE FONT ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ================= BODY ================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+
+  background:
+  linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+  url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1500&q=80");
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  min-height:100vh;
+}
+
+/* ================= HOME PAGE ================= */
+
+.container{
+
+  width:90%;
+  max-width:620px;
+
+  margin:50px auto;
+
+  background:rgba(255,255,255,.97);
+
+  padding:40px;
+
+  border-radius:25px;
+
+  box-shadow:
+  0 20px 60px rgba(0,0,0,.35);
+
+  backdrop-filter:blur(10px);
+
+}
+
+.container h1{
+
+  font-family:'Cinzel',serif;
+
+  text-align:center;
+
+  color:#9b5c00;
+
+  font-size:34px;
+
+  margin-bottom:35px;
+
+  letter-spacing:1px;
+
+}
+
+input{
+
+  width:100%;
+
+  padding:15px;
+
+  border:none;
+
+  border-radius:12px;
+
+  margin-bottom:18px;
+
+  font-size:15px;
+
+  background:#f5f5f5;
+
+  transition:.3s;
+
+  outline:none;
+
+}
+
+input:focus{
+
+  background:white;
+
+  box-shadow:
+  0 0 0 3px #f4d35e;
+
+}
+
+button{
+
+  width:100%;
+
+  padding:16px;
+
+  border:none;
+
+  border-radius:12px;
+
+  cursor:pointer;
+
+  font-size:17px;
+
+  font-weight:bold;
+
+  color:white;
+
+  background:
+  linear-gradient(90deg,#d4af37,#b8860b);
+
+  transition:.4s;
+
+}
+
+button:hover{
+
+  transform:translateY(-3px);
+
+  box-shadow:
+  0 15px 35px rgba(212,175,55,.45);
+
+}
+
+/* ================= QR ================= */
+
+canvas{
+
+  margin-top:20px;
+
+  padding:15px;
+
+  background:white;
+
+  border-radius:18px;
+
+  box-shadow:0 8px 25px rgba(0,0,0,.2);
+
+}
+
+/* ================= INVITATION CARD ================= */
+
+.invitation-card{
+
+  width:92%;
+
+  max-width:900px;
+
+  margin:50px auto;
+
+  padding:60px;
+
+  text-align:center;
+
+  color:white;
+
+  border-radius:35px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  background:
+
+  linear-gradient(
+  135deg,
+  #6b1d1d,
+  #9b2226,
+  #c1121f,
+  #780000
+  );
+
+  border:8px solid #FFD700;
+
+  box-shadow:
+  0 20px 60px rgba(0,0,0,.45);
+
+}
+
+.invitation-card::before{
+
+content:"";
+
+position:absolute;
+
+top:-100px;
+left:-100px;
+
+width:250px;
+height:250px;
+
+border-radius:50%;
+
+background:rgba(255,215,0,.15);
+
+}
+
+.invitation-card::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-120px;
+right:-120px;
+
+width:280px;
+height:280px;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.08);
+
+}
+
+.invitation-card h1{
+
+font-family:'Cinzel',serif;
+
+font-size:50px;
+
+color:#FFD700;
+
+margin-bottom:20px;
+
+}
+
+.invitation-card h2{
+
+font-family:'Cinzel',serif;
+
+font-size:34px;
+
+margin:15px 0;
+
+color:white;
+
+}
+
+.invitation-card h3{
+
+font-size:25px;
+
+color:#FFD700;
+
+margin-top:25px;
+
+margin-bottom:10px;
+
+}
+
+.invitation-card p{
+
+font-size:18px;
+
+line-height:1.8;
+
+margin:12px 0;
+
+}
+
+/* ================= PHOTO ================= */
+
+.couple-photo{
+
+width:240px;
+
+height:240px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid gold;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.45);
+
+margin:25px auto;
+
+display:block;
+
+transition:.4s;
+
+}
+
+.couple-photo:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ================= BUTTONS ================= */
+
+.travel-btn,
+.map-btn{
+
+display:inline-block;
+
+padding:14px 28px;
+
+margin:10px;
+
+border-radius:40px;
+
+text-decoration:none;
+
+font-size:16px;
+
+font-weight:600;
+
+transition:.35s;
+
+background:linear-gradient(90deg,#FFD700,#ffb703);
+
+color:#5b2c06;
+
+box-shadow:0 10px 25px rgba(255,215,0,.3);
+
+}
+
+.travel-btn:hover,
+.map-btn:hover{
+
+transform:translateY(-4px);
+
+background:white;
+
+color:#b8860b;
+
+}
+
+/* ================= HR ================= */
+
+hr{
+
+border:none;
+
+height:2px;
+
+margin:30px auto;
+
+width:80%;
+
+background:linear-gradient(to right,transparent,gold,transparent);
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.container{
+
+padding:25px;
+
+}
+
+.container h1{
+
+font-size:26px;
+
+}
+
+.invitation-card{
+
+padding:30px;
+
+}
+
+.invitation-card h1{
+
+font-size:34px;
+
+}
+
+.invitation-card h2{
+
+font-size:26px;
+
+}
+
+.couple-photo{
+
+width:180px;
+
+height:180px;
+
+}
+
+.travel-btn,
+.map-btn{
+
+display:block;
+
+width:100%;
+
+margin:12px auto;
+
+}
+
+}
