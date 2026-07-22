@@ -6,7 +6,7 @@ function Invitation() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(`http://10.89.5.94:5000/wedding/${id}`)
+    fetch(`https://smart-invitation-backend.onrender.com/wedding/${id}`)
       .then((res) => res.json())
       .then((result) => {
         console.log(result);
@@ -36,11 +36,13 @@ function Invitation() {
         "Where Love Begins, Forever Blooms."
       </p>
 
-      <img
-        src={data.photo}
-        alt="Couple"
-        className="couple-photo"
-      />
+      {data.photo && (
+        <img
+          src={data.photo}
+          alt="Couple"
+          className="couple-photo"
+        />
+      )}
 
       <p className="welcome-text">
         With immense joy and heartfelt gratitude,
@@ -145,9 +147,7 @@ function Invitation() {
         and every cherished moment shared
         with you will become a treasured
         memory in our new journey together.
-
         <br /><br />
-
         We eagerly await your gracious presence.
       </p>
 
