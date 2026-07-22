@@ -136,9 +136,9 @@ function Home() {
           <h3>Wedding QR Code</h3>
 
           <QRCodeCanvas
-            value={`https://smart-invitation-backend.onrender.com/invitation/${generatedId}`}
-            size={200}
-          />
+  value={`https://smart-invitation-app.vercel.app/invitation/${generatedId}`}
+  size={200}
+/>
         </div>
       )}
     </div>
